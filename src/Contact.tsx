@@ -13,7 +13,7 @@ function Contact(){
   const handleContactSubmit = async(e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
   try{
-    const response = await axios.post("http://localhost:3000/users",{
+    const response = await axios.post("https://portfolio-site-dyx2.onrender.com",{
       name: name,
       number:number
     });
