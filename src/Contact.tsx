@@ -12,24 +12,25 @@ function Contact(){
   const [showSuccess, setShowSuccess] = useState<boolean>(false);  // For green flash
   const handleContactSubmit = async(e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
-  try{
-    const response = await axios.post("https://portfolio-site-dyx2.onrender.com",{
-      name: name,
-      number:number
-    });
-    setName("");
-    setNumber("");
-    setIsSubmitted(true);
-    setShowSuccess(true);
-    // Flash success message for 3 seconds
-    setTimeout(() => setShowSuccess(false), 3000);
-  }catch(error:unknown){
-    if (error instanceof Error) {
-      console.log('Error submitting: ', error.message);
-    } else {
-      console.log('Unknown error: ', error);
+    console.log("Contact form submitted");
+    try{
+      const response = await axios.post("https://portfolio-site-dyx2.onrender.com",{
+        name: name,
+        number:number
+      });
+      setName("");
+      setNumber("");
+      setIsSubmitted(true);
+      setShowSuccess(true);
+      // Flash success message for 3 seconds
+      setTimeout(() => setShowSuccess(false), 3000);
+    }catch(error:unknown){
+      if (error instanceof Error) {
+        console.log('Error submitting: ', error.message);
+      } else {
+        console.log('Unknown error: ', error);
+      }
     }
-  }
 
 
   }
