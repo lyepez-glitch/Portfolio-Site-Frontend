@@ -13,25 +13,23 @@ function Contact(){
   const handleContactSubmit = async(e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
     console.log("Contact form submitted");
-    try{
-      const response = await axios.post("https://portfolio-site-dyx2.onrender.com",{
+    try {
+      const response = await axios.post("https://portfolio-site-dyx2.onrender.com", {
         name: name,
-        number:number
+        number: number,
       });
-      setName("");
-      setNumber("");
-      setIsSubmitted(true);
-      setShowSuccess(true);
-      // Flash success message for 3 seconds
-      setTimeout(() => setShowSuccess(false), 3000);
-    }catch(error:unknown){
-      console.log('err',error.message);
-      if (error instanceof Error) {
+      console.log("Response: ", response.data); // Log the response
+      // ...
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        console.error('Axios error: ', error.response?.data); // Log Axios error response
+      } else if (error instanceof Error) {
         console.log('Error submitting: ', error.message);
       } else {
         console.log('Unknown error: ', error);
       }
     }
+
 
 
   }
