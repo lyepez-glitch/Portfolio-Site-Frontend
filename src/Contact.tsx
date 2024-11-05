@@ -25,6 +25,7 @@ function Contact(){
       // Flash success message for 3 seconds
       setTimeout(() => setShowSuccess(false), 3000);
     }catch(error:unknown){
+      console.log('err',error.message);
       if (error instanceof Error) {
         console.log('Error submitting: ', error.message);
       } else {
