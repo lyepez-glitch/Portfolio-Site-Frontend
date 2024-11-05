@@ -19,7 +19,12 @@ function Contact(){
         number: number,
       });
       console.log("Response: ", response.data); // Log the response
-      // ...
+      setName("");
+      setNumber("");
+      setIsSubmitted(true);
+      setShowSuccess(true);
+      // Flash success message for 3 seconds
+      setTimeout(() => setShowSuccess(false), 3000);
     } catch (error: unknown) {
       if (axios.isAxiosError(error)) {
         console.error('Axios error: ', error.response?.data); // Log Axios error response
