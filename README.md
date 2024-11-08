@@ -47,3 +47,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 see app at https://my-zhd678o45-lucas-projects-f61d5cb5.vercel.app/contact
+
+run ecommerce backend at https://ecommerce-backend-1-yn41.onrender.com
+
+
+run collab task backend at https://collaborative-task-management-app.onrender.com/
+
+

@@ -18,8 +18,8 @@ function Project(){
   const [projDetailsId,setProjDetailsId] = useState<string>("");
   useEffect(() => {
     setProjects([{id:"1",title:"Messaging App",path:"https://lyep.pythonanywhere.com/rooms/",desc:"Real time Messaging App",demo:"demo",challenges:"integrating websockets",techUsed:"Django Channels, Django",features:"send,receive, update messages in real-time",viewCode:"https://github.com/lyepez-glitch/MessagingApp"},
-    {id:"2",title:"Oracle Ecommerce App",path:"https://github.com/lyepez-glitch/Oracle_Ecommerce_App",desc:"Manage Employees through a management system",demo:"https://lyep.pythonanywhere.com/",challenges:"Multiple CRUD needed",techUsed:"Springboot,Java,React,Oracle PLSQL",features:"add,update,manage employees,roles,departments",viewCode:"https://github.com/lyepez-glitch/Oracle_Ecommerce_App"},
-    {id:"3",title:"Collaborative-Task-Management-App",path:"https://github.com/lyepez-glitch/Collaborative-Task-Management-App",desc:"Edit Profile,Manage tasks,projects",demo:"demo",challenges:"using websockets",techUsed:"Node,React",features:"Can add,update,delete tasks and projects, edit profile",viewCode:"https://github.com/lyepez-glitch/Collaborative-Task-Management-App"}])
+    {id:"2",title:"Oracle Ecommerce App",path:"https://oracle-ecommerce-k7omklaqi-lucas-projects-f61d5cb5.vercel.app",desc:"Manage Employees through a management system",demo:"https://lyep.pythonanywhere.com/",challenges:"Multiple CRUD needed",techUsed:"Springboot,Java,React,Oracle PLSQL",features:"add,update,manage employees,roles,departments",viewCode:"https://github.com/lyepez-glitch/Oracle_Ecommerce_App"},
+    {id:"3",title:"Collaborative-Task-Management-App",path:"https://collaborative-task-management-app-9dtp-508wae1hc.vercel.app/",desc:"Edit Profile,Manage tasks,projects",demo:"demo",challenges:"using websockets",techUsed:"Node,React",features:"Can add,update,delete tasks and projects, edit profile",viewCode:"https://github.com/lyepez-glitch/Collaborative-Task-Management-App"}])
     },[]);
 
   return (
