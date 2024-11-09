@@ -19,6 +19,7 @@ function Contact(){
         number: number,
       });
       console.log("Response: ", response.data); // Log the response
+      //
       setName("");
       setNumber("");
       setIsSubmitted(true);
