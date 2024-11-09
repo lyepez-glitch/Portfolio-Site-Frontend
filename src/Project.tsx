@@ -33,7 +33,16 @@ function Project(){
         projects.map(proj=>
           <ul className="card">
             <li>title:{proj.title}</li>
-            <li>path:<Link to={proj.path}>Click Here</Link></li>
+            <li>path:<Link to={proj.path}>Open this frontend in a new tab</Link></li>
+            {
+              proj.backend !== ""?(
+                <li>path:<Link to={proj.backend}>Open this backend in another tab as well</Link></li>
+              ):(
+                <>
+                </>
+              )
+            }
+
             <li>description:{proj.desc}</li>
             <li>Live demo: {proj.demo}</li>
 
