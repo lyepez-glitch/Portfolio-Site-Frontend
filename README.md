@@ -16,6 +16,9 @@ Database: SQLite/MySQL (depending on your choice)
 Deployment: Vercel, GitHub Pages (or other platforms as applicable)
 Setup Instructions
 To set up this project locally, follow these steps:
+Frontend Repo: https://github.com/lyepez-glitch/Portfolio-Site-Frontend.git
+
+Backend Repo: https://github.com/lyepez-glitch/Portfolio-Site
 
 Clone the repository:
 bash
@@ -38,7 +41,11 @@ Frontend Access (Deployed Version)
 
 You can also access the deployed version of the frontend here:
 
-https://vercel.com/lucas-projects-f61d5cb5/my-app
+https://my-cyiwja7b3-lucas-projects-f61d5cb5.vercel.app/
+
+Launch deployed backend in a different tab:
+
+https://portfolio-site-backend-05sf.onrender.com
 
 Portfolio Frontend - Deployed on Vercel
 Features
