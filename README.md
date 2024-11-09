@@ -35,6 +35,7 @@ Copy code
 npm start
 Open your browser and visit http://localhost:3000 (or the port specified).
 Frontend Access (Deployed Version)
+
 You can also access the deployed version of the frontend here:
 
 https://vercel.com/lucas-projects-f61d5cb5/my-app

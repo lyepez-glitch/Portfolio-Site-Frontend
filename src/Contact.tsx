@@ -14,7 +14,7 @@ function Contact(){
     e.preventDefault();
     console.log("Contact form submitted");
     try {
-      const response = await axios.post("https://portfolio-site-dyx2.onrender.com/users", {
+      const response = await axios.post("https://portfolio-site-backend-05sf.onrender.com", {
         name: name,
         number: number,
       });
