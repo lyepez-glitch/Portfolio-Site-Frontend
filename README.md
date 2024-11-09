@@ -1,56 +1,98 @@
-# Getting Started with Create React App
+Portfolio Project
+Table of Contents
+Project Overview
+Technologies Used
+Setup Instructions
+Features
+Future Improvements
+Contact Information
+Project Overview
+This project is a personal portfolio website designed to showcase my coding journey, projects, and skills. It includes sections for my portfolio, an about me page, and a contact form, with a sleek, professional design that emphasizes user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies Used
+Frontend: HTML, CSS, JavaScript, React
+Backend: Node.js (or specify Django/Spring Boot if used)
+Database: SQLite/MySQL (depending on your choice)
+Deployment: Vercel, GitHub Pages (or other platforms as applicable)
+Setup Instructions
+To set up this project locally, follow these steps:
 
-## Available Scripts
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/lyepez-glitch/Portfolio-Site-Frontend.git
+Navigate to the project directory:
+bash
+Copy code
+cd Portfolio-Site-Frontend
+Install dependencies (if applicable):
+bash
+Copy code
+npm install
+Start the frontend app:
+bash
+Copy code
+npm start
+Open your browser and visit http://localhost:3000 (or the port specified).
+Frontend Access (Deployed Version)
+You can also access the deployed version of the frontend here:
 
-In the project directory, you can run:
+https://vercel.com/lucas-projects-f61d5cb5/my-app
 
-### `npm start`
+Portfolio Frontend - Deployed on Vercel
+Features
+1. Set Up Basic Structure (2 points)
+Objective: Set up the basic structure using HTML/CSS/JavaScript for frontend and Node.js for backend.
+Tasks Completed:
+Basic HTML structure and initial CSS: Done
+Backend setup and database connection: Done
+Routing for homepage and project pages: Done
+2. Landing Page Design & Content (3 points)
+Objective: Create an attractive landing page introducing myself.
+Tasks Completed:
+Hero section with name, title, and brief intro: Done
+Navigation links to projects, about, and contact sections: Done
+Professional styling: Done
+3. Project Showcase Page (4 points)
+Objective: Showcase coding projects with descriptions and links.
+Tasks Completed:
+Cards/tiles for each project: Done
+Project titles, descriptions, GitHub links, and live demos: Done
+Easy navigation back to the homepage: Done
+4. Project Detail Pages (4 points)
+Objective: Add detailed project descriptions.
+Tasks Completed:
+Dynamic page for each project: Done
+Display project-specific info (challenges, technologies, features): Done
+Call-to-actions for viewing code and live demos: Done
+5. About Me Section (2 points)
+Objective: Outline my experience, education, and skills.
+Tasks Completed:
+Concise bio about my coding journey: Done
+Tech stack representation (logos/icons): Done
+Certifications or relevant background: Done
+6. Contact Form or Links (2 points)
+Objective: Implement a way for visitors to contact me.
+Tasks Completed:
+Contact form (if using a backend): Done
+Social media links (LinkedIn, GitHub, etc.) and email link: Done
+7. Responsive Design (3 points) - Skipped
+Objective: Ensure mobile-friendliness.
+8. Basic SEO and Optimization (2 points)
+Objective: Optimize for SEO and load times.
+Tasks Completed:
+Added meta tags, titles, and descriptions: Done
+Optimized images for faster load times: Done
+Considered lazy loading for images: Done
+9. Deploy Website (3 points) - Skipped
+Objective: Deploy the portfolio to a hosting service.
+Future Improvements
+Implement responsive design for better mobile experience.
+Add more interactive elements to enhance user engagement.
+Explore additional deployment options or services.
+Contact Information
+For any inquiries, feel free to reach out:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-
-see app at https://my-zhd678o45-lucas-projects-f61d5cb5.vercel.app/contact
-
-run ecommerce backend at https://ecommerce-backend-1-yn41.onrender.com
-
-
-run collab task backend at https://collaborative-task-management-app.onrender.com/
-
-
+Email: lucasyepez99@gmail.com
+LinkedIn: www.linkedin.com/in/lucas-yepez
+GitHub: https://github.com/lyepez-glitch/
