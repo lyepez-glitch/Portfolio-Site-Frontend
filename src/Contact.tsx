@@ -8,7 +8,7 @@ function Contact(){
   const [github,setGithub] = useState<string>("https://github.com/lyepez-glitch")
   const [name,setName] = useState<string>("")
   const [number,setNumber] = useState<string>("")
-  const [isSubmitted, setIsSubmitted] = useState<boolean>(false); // Track if submitted
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false); /// Track if submitted
   const [showSuccess, setShowSuccess] = useState<boolean>(false);  // For green flash
   const handleContactSubmit = async(e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
