@@ -16,8 +16,8 @@ function About(){
     { title: 'Associate Degree in Programming' },
   ]);
   const [backgrounds, setBackgrounds] = useState<string[]>([
-    "Associate's Degree in Programming from [Your College Name]",
-    "Junior Developer at [Company Name] (Month Year - Month Year)",
+    "Associate's Degree in Programming from Austin Community College",
+    "Junior Developer at Aspire Digital Technologies 01/2020 - Present",
     "Proficient in JavaScript, Python, React, and Node.js",
     "Certifications: FreeCodeCamp Responsive Web Design, The Odin Project Full Stack JavaScript",
     "Passionate about open-source contributions and community building"
