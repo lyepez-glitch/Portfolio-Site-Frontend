@@ -1,4 +1,4 @@
-Portfolio Project Documentation
+Portfolio Project
 Table of Contents
 Project Overview
 Technologies Used
@@ -7,98 +7,100 @@ Features
 Future Improvements
 Contact Information
 Project Overview
-This personal portfolio website showcases my coding projects, journey, and skills. It features a project gallery, an "About Me" section, and a contact form. The design prioritizes a sleek, professional aesthetic and smooth user experience.
+This project is a personal portfolio website designed to showcase my coding journey, projects, and skills. It includes sections for my portfolio, an about me page, and a contact form, with a sleek, professional design that emphasizes user experience.
 
 Technologies Used
 Frontend: HTML, CSS, JavaScript, React
-Backend: Node.js (or Django/Spring Boot, if applicable)
-Database: SQLite/MySQL
-Deployment: Vercel, GitHub Pages (or other platforms)
+Backend: Node.js (or specify Django/Spring Boot if used)
+Database: SQLite/MySQL (depending on your choice)
+Deployment: Vercel, GitHub Pages (or other platforms as applicable)
 Setup Instructions
-To run this project locally:
+To set up this project locally, follow these steps:
+Frontend Repo: https://github.com/lyepez-glitch/Portfolio-Site-Frontend.git
 
-Frontend Repository: GitHub - Portfolio Site Frontend
-Backend Repository: GitHub - Portfolio Site Backend
+Backend Repo: https://github.com/lyepez-glitch/Portfolio-Site
 
-Clone the Frontend Repository:
-
+Clone the repository:
 bash
 Copy code
 git clone https://github.com/lyepez-glitch/Portfolio-Site-Frontend.git
-Navigate to Project Directory:
-
+Navigate to the project directory:
 bash
 Copy code
 cd Portfolio-Site-Frontend
-Install Dependencies:
-
+Install dependencies (if applicable):
 bash
 Copy code
 npm install
-Start the Frontend App:
-
+Start the frontend app:
 bash
 Copy code
 npm start
-Open http://localhost:3000 (or your specified port) to view the application.
+Open your browser and visit http://localhost:3000 (or the port specified).
+Frontend Access (Deployed Version)
 
-Deployed Versions:
+You can also access the deployed version of the frontend here:
 
-Frontend: Portfolio Frontend on Vercel
-Backend: Backend Deployed on Render
+https://my-cyiwja7b3-lucas-projects-f61d5cb5.vercel.app/
+
+Launch deployed backend in a different tab:
+
+https://portfolio-site-backend-05sf.onrender.com
+
+Portfolio Frontend - Deployed on Vercel
 Features
-1. Set Up Basic Structure (2 Points)
-Objective: Basic HTML structure, CSS for the frontend, Node.js backend setup, and database connection.
+1. Set Up Basic Structure (2 points)
+Objective: Set up the basic structure using HTML/CSS/JavaScript for frontend and Node.js for backend.
 Tasks Completed:
-Basic HTML structure and initial CSS styling
-Backend setup with database connection
-Routing for homepage and project pages
-2. Landing Page Design & Content (3 Points)
-Objective: Create a welcoming landing page.
+Basic HTML structure and initial CSS: Done
+Backend setup and database connection: Done
+Routing for homepage and project pages: Done
+2. Landing Page Design & Content (3 points)
+Objective: Create an attractive landing page introducing myself.
 Tasks Completed:
-Hero section with name, title, and brief intro
-Navigation links to projects, about, and contact sections
-Professional styling
-3. Project Showcase Page (4 Points)
-Objective: Display coding projects with descriptions and links.
+Hero section with name, title, and brief intro: Done
+Navigation links to projects, about, and contact sections: Done
+Professional styling: Done
+3. Project Showcase Page (4 points)
+Objective: Showcase coding projects with descriptions and links.
 Tasks Completed:
-Card layout for each project
-Project titles, descriptions, GitHub links, and live demos
-Easy navigation back to homepage
-4. Project Detail Pages (4 Points)
-Objective: Provide detailed project information.
+Cards/tiles for each project: Done
+Project titles, descriptions, GitHub links, and live demos: Done
+Easy navigation back to the homepage: Done
+4. Project Detail Pages (4 points)
+Objective: Add detailed project descriptions.
 Tasks Completed:
-Dynamic pages for each project
-Project-specific details (challenges, technologies, features)
-Links for code and live demos
-5. About Me Section (2 Points)
-Objective: Summarize experience, education, and skills.
+Dynamic page for each project: Done
+Display project-specific info (challenges, technologies, features): Done
+Call-to-actions for viewing code and live demos: Done
+5. About Me Section (2 points)
+Objective: Outline my experience, education, and skills.
 Tasks Completed:
-Bio on coding journey
-Tech stack represented by logos/icons
-Certifications and relevant background
-6. Contact Form or Links (2 Points)
-Objective: Implement contact options.
+Concise bio about my coding journey: Done
+Tech stack representation (logos/icons): Done
+Certifications or relevant background: Done
+6. Contact Form or Links (2 points)
+Objective: Implement a way for visitors to contact me.
 Tasks Completed:
-Contact form (if backend-supported)
-Social media links (LinkedIn, GitHub, etc.) and email link
-7. Responsive Design (3 Points) - Skipped
-Objective: Ensure mobile responsiveness.
-8. Basic SEO and Optimization (2 Points)
-Objective: Improve SEO and load times.
+Contact form (if using a backend): Done
+Social media links (LinkedIn, GitHub, etc.) and email link: Done
+7. Responsive Design (3 points) - Skipped
+Objective: Ensure mobile-friendliness.
+8. Basic SEO and Optimization (2 points)
+Objective: Optimize for SEO and load times.
 Tasks Completed:
-Meta tags, titles, and descriptions added
-Images optimized for faster loading
-Lazy loading considered for images
-9. Deploy Website (3 Points) - Skipped
+Added meta tags, titles, and descriptions: Done
+Optimized images for faster load times: Done
+Considered lazy loading for images: Done
+9. Deploy Website (3 points) - Skipped
 Objective: Deploy the portfolio to a hosting service.
 Future Improvements
-Add responsive design for mobile compatibility
-Increase user engagement with interactive elements
-Explore alternative hosting options
+Implement responsive design for better mobile experience.
+Add more interactive elements to enhance user engagement.
+Explore additional deployment options or services.
 Contact Information
-For inquiries, feel free to reach out:
+For any inquiries, feel free to reach out:
 
 Email: lucasyepez99@gmail.com
-LinkedIn: LinkedIn Profile
-GitHub: GitHub Profile
+LinkedIn: www.linkedin.com/in/lucas-yepez
+GitHub: https://github.com/lyepez-glitch/
