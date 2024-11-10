@@ -41,7 +41,7 @@ Frontend Access (Deployed Version)
 
 You can also access the deployed version of the frontend here:
 
-https://my-cyiwja7b3-lucas-projects-f61d5cb5.vercel.app/
+https://my-app-nine-blue-87.vercel.app
 
 Launch deployed backend in a different tab:
 
