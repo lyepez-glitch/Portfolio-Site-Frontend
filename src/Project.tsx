@@ -55,7 +55,7 @@ function Project(){
             }
 
             <li>description:{proj.desc}</li>
-            <li>Live demo: {proj.demo}</li>
+            <li>Live demo: <a href={proj.demo}>{proj.demo}</a></li>
 
             {
               projDetailsId === proj.id?(
