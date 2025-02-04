@@ -27,7 +27,7 @@ function Project(){
 
       {id:"6",title:"Vitalsource",frontend: "https://vital-source-front-end-ariw.vercel.app",backend: "https://vitalcore.onrender.com/", desc:"See impact of treaments on cells through charts and graphs",demo:"demo",challenges:"using Graphql",techUsed:"Graphql",features:"See impact of treaments on cells through charts and graphs",viewCode:["https://github.com/lyepez-glitch/VitalSource-FrontEnd","https://github.com/lyepez-glitch/VitalCore"]},
       {id:"7",title:"Magicka",frontend: "https://magicka-frontend-auth.vercel.app",backend:"https://magicka-app.onrender.com",desc:"Input profile info and use magic spell against other opponents",demo:"demo",challenges:"travis",techUsed:"python",features:"Input profile info and use magic spell against other opponents",viewCode:["https://github.com/lyepez-glitch/Magicka_Frontend","https://github.com/lyepez-glitch/Magicka_app"]},
-      {id:"8",title:"BioAgeCompanion",frontend: "https://dist-lime-beta.vercel.app",backend:"https://bioage-companion.onrender.com/api/",desc:"Input vitals and calculate biological age and health recommendations",demo:"demo",challenges:"react native",techUsed:"python",features:"Input vitals and calculate biological age and health recommendations",viewCode:["https://github.com/lyepez-glitch/BioAge-Companion-"]}
+      {id:"8",title:"BioAgeCompanion",frontend: "https://bio-age-frontend.vercel.app/",backend:"https://bioage-companion.onrender.com/api/",desc:"Input vitals and calculate biological age and health recommendations",demo:"demo",challenges:"react native",techUsed:"python",features:"Input vitals and calculate biological age and health recommendations",viewCode:["https://github.com/lyepez-glitch/BioAge-Companion-"]}
 
     ];
 
