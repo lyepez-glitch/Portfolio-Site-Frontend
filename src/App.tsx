@@ -20,9 +20,10 @@ function App() {
       <meta name="keywords" content="portfolio, web development, projects, programming" />
       <meta name="author" content="Lucas Yepez" />
     </Helmet>
-    <Hero/>
+
     <Router>
-    <Nav/>
+    <Hero/>
+    {/* <Nav/> */}
     <Routes>
       <Route path = "/about" element={<About/>}/>
       <Route path = "/contact" element={<Contact/>}/>

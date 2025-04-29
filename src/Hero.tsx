@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import Nav from './Nav';
+import React from 'react';
 
 function Hero(){
   const [name,setName] = useState<string>('Lucas Yepez');
@@ -8,6 +10,7 @@ function Hero(){
   return (
     <>
     <div className="userContainer">
+      <Nav/>
     <div style={{ marginBottom: '20px', display: 'block' }}>
     <h3 style={{ margin: 0 ,display:'block'}}>Name:</h3>
     <div>{name}</div>
