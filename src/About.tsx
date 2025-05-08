@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import { FaReact,FaNode, FaJava, FaPython, FaDatabase } from "react-icons/fa";
 import { DiJavascript1, DiJqueryLogo, DiDjango, DiMysql, DiPostgresql, DiMongodb } from 'react-icons/di';
+import { Link } from 'react-router-dom';
 import { SiSpringboot, SiOracle } from 'react-icons/si';
 import { FaCertificate } from 'react-icons/fa';
 function About(){
@@ -24,6 +25,7 @@ function About(){
   ]);
   return (
     <>
+    <Link to="/" className="back-home-link">Back to Home</Link>
     <div className="aboutContainer">
       <h3>About:</h3>
       <p>{bio}</p>

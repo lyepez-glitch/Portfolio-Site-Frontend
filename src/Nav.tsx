@@ -5,11 +5,12 @@ function Nav(){
   return (
     <>
     <div className="navContainer">
-      <NavLink to = "/about">About</NavLink>
+    <span style={{fontWeight: 'normal'}}>Lucas Yepez</span>
+      <NavLink className="about" to = "/about">About</NavLink>
       <br />
       <NavLink to = "/contact">Contact Me</NavLink>
       <br />
-      <NavLink to = "/home">Home</NavLink>
+      <NavLink to = "/home">Projects</NavLink>
     </div>
 
     </>

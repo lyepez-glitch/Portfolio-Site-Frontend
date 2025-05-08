@@ -46,6 +46,11 @@
     width: 400px;
     text-align: center;
     padding: 20px 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    height: 75%;
+    gap: 0.5rem;
 }
 
 .container {
@@ -63,17 +68,50 @@
 }
 
 .navContainer {
+    align-self: center;
     margin-top: 100px;
-    margin-left: 45% !important;
-    background-color: gold;
-    border: 2px solid black;
-    border-radius: 15px;
+    /* margin-left: 45% !important; */
+    /* background-color: gold; */
+    /* border: 2px solid black; */
+    /* border-radius: 15px; */
     width: 80%;
-    max-width: 300px;
+    /* max-width: 300px; */
     text-align: center;
     padding: 20px 20px;
     margin: 0 auto 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    display: flex;
+    gap: 8px;
+    height: 20px;
+    justify-content: flex-start;
+    /* flex-basis: 90%; */
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+.navContainer a {
+    color: black;
+    text-decoration: none;
+    align-self: center;
+}
+
+.nameHeader {
+    font-size: 100px;
+    /* flex-basis: 90%; */
+    margin-top: 10%;
+}
+
+.intro {
+    margin: 0;
+    margin-top: 0.25rem;
+    /* reduce space above */
+    margin-bottom: 0.25rem;
+    /* reduce space below */
+    line-height: 1.2;
+}
+
+.about {
+    margin-left: auto;
 }
 
 body {
@@ -92,6 +130,7 @@ body {
     width: 400px;
     text-align: center;
     padding: 20px 20px;
+    margin: 0;
 }
 
 .contactContainer {

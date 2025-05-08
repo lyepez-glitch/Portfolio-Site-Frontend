@@ -2,6 +2,7 @@ import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+
 function Contact(){
   const [email,setEmail] = useState<string>("lucasyepez99@gmail.com");
   const [linkedIn,setLinkedIn]  = useState<string>("https://www.linkedin.com/in/lucas-yepez/")
@@ -42,6 +43,7 @@ function Contact(){
 
   return(
     <>
+    <Link to="/" className="back-home-link">Back to Home</Link>
     <div className="contactContainer">
       <h3>I would love to hear from you! Whether you have questions, ideas, or just want to chat about tech, feel free to reach out.</h3>
       <div style={{ marginBottom: '20px'}}>
