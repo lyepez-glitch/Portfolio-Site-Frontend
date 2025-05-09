@@ -27,9 +27,10 @@ function About(){
     <>
     <Link to="/" className="back-home-link">Back to Home</Link>
     <div className="aboutContainer">
-      <h3>About:</h3>
-      <p>{bio}</p>
-      <ul>
+      <h3 id="aboutHeader">About</h3>
+      <p id="bioText">{bio}</p>
+      <img id="mainImg" src="src/mainPic.jpeg"></img>
+      <ul id="languagesContainer">
         <li><FaReact /> React</li>
         <li><DiJavascript1 /> JavaScript</li>
         <li><FaNode /> Node.js</li>
@@ -44,24 +45,38 @@ function About(){
 
         <li><DiMongodb /> MongoDB</li>
     </ul>
-    <ul>
-      <li style={{ fontWeight: 'bold' }}>Certifications:</li>
-      {
+    <div style={{width:'30%'}}>
+    <ul id="certsContainer">
+     <div style={{ fontWeight: 'bold' }}>Certifications:</div>
+     <div id="certs">
+     {
         certs.map(cert => (
           <li key={cert.title} style={{ marginBottom: '10px' }}>
             <FaCertificate /> {cert.title}
           </li>
         ))
       }
-  </ul>
-      <ul>
-        Background:
-        {
-          backgrounds.map(background=>
-            <li>{background}</li>
-            )
-        }
-      </ul>
+
+     </div>
+
+
+    </ul>
+
+    </div>
+
+      <div id="backgroundContainer">
+        <div>Background:</div>
+        <ul id="background">
+
+          {
+            backgrounds.map(background=>
+              <li>{background}</li>
+              )
+          }
+        </ul>
+
+      </div>
+
 
       </div>
 

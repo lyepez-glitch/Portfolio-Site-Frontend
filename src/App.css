@@ -131,6 +131,66 @@ body {
     text-align: center;
     padding: 20px 20px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 180%;
+    justify-content: space-between;
+}
+
+#languagesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+#certs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+#certsContainer {
+    width: 30%;
+    margin-right: auto;
+}
+
+#backgroundContainer {
+    width: 30%;
+    margin-right: auto;
+}
+
+#background {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+#mainImg {
+    height: 40%;
+    width: 35%;
+    align-self: center;
+    flex-basis: 20%;
+}
+
+#aboutHeader {
+    flex-basis: 90%;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 2px solid black;
+}
+
+#bioText {
+    width: 60%;
+    /* font-weight: bold; */
+    font-size: 30px;
 }
 
 .contactContainer {
