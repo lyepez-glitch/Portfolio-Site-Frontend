@@ -128,12 +128,12 @@ body {
     border: 2px solid black;
     border-radius: 15px;
     width: 400px;
-    text-align: center;
+    /* text-align: center; */
     padding: 20px 20px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    height: 180%;
+    /* height: 180%; */
     justify-content: space-between;
 }
 
@@ -143,6 +143,7 @@ body {
     gap: 1rem;
     padding: 1rem;
     list-style-type: none;
+    height: 20%;
 }
 
 #certs {
@@ -157,6 +158,12 @@ body {
 #certsContainer {
     width: 30%;
     margin-right: auto;
+    margin-top: 0;
+}
+
+#langHeader,
+#backgroundHeader {
+    font-weight: bold;
 }
 
 #backgroundContainer {
@@ -185,28 +192,83 @@ body {
     text-align: left;
     font-weight: normal;
     border-bottom: 2px solid black;
+    height: 30px;
+}
+
+.back-home-link {
+    flex-basis: 100%;
+    align-self: flex-start;
+    text-align: left;
 }
 
 #bioText {
     width: 60%;
     /* font-weight: bold; */
     font-size: 30px;
+    align-self: center;
+    margin-bottom: 100px;
 }
 
 .contactContainer {
-    margin-left: 40%;
+    /* margin-left: 40%; */
     margin-top: 20%;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     background-color: white;
     border: 2px solid black;
     border-radius: 15px;
-    width: 400px;
+    /* width: 400px; */
     text-align: center;
     padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contactHeader {
+    font-weight: bold;
+    color: black;
+    font-size: 70px;
+    margin-bottom: 5px;
+    /* text-align: left; */
+    margin-top: 0;
+    flex-basis: 100%;
+    padding: 20px 20px;
+}
+
+#contactSubHeader {
+    text-align: left;
+    padding: 20px 20px;
+}
+
+#contactHeadDiv {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contactContainer button {
     margin-left: 50%;
+}
+
+.border-right {
+    border-right: 2px dotted #ccc;
+}
+
+#contactGridBox {
+    text-align: left;
+    display: grid;
+    border: 2px dotted #999;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    width: 55%;
+}
+
+#contactBtn {
+    background-color: rgb(99, 91, 254);
+    color: #fff;
+    border-radius: 15px;
+    transform: scale(1.40);
 }
 
 .homeContainer {
@@ -343,4 +405,5 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    padding-bottom: 100px;
 }

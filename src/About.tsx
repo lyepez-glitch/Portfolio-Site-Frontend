@@ -16,20 +16,24 @@ function About(){
     { title: 'The Odin Project Full Stack JavaScript' },
     { title: 'Associate Degree in Programming' },
   ]);
+
   const [backgrounds, setBackgrounds] = useState<string[]>([
     "Associate's Degree in Programming from Austin Community College",
     "Junior Developer at Aspire Digital Technologies 01/2020 - Present",
     "Proficient in JavaScript, Python, React, and Node.js",
-    "Certifications: FreeCodeCamp Responsive Web Design, The Odin Project Full Stack JavaScript",
     "Passionate about open-source contributions and community building"
   ]);
   return (
     <>
-    <Link to="/" className="back-home-link">Back to Home</Link>
+
     <div className="aboutContainer">
+    <Link to="/" className="back-home-link">Back to Home</Link>
       <h3 id="aboutHeader">About</h3>
+
       <p id="bioText">{bio}</p>
       <img id="mainImg" src="src/mainPic.jpeg"></img>
+      <div id="languages">
+        <div id="langHeader">Languages</div>
       <ul id="languagesContainer">
         <li><FaReact /> React</li>
         <li><DiJavascript1 /> JavaScript</li>
@@ -45,9 +49,11 @@ function About(){
 
         <li><DiMongodb /> MongoDB</li>
     </ul>
+      </div>
+
     <div style={{width:'30%'}}>
     <ul id="certsContainer">
-     <div style={{ fontWeight: 'bold' }}>Certifications:</div>
+     <div style={{ fontWeight: 'bold' }}>Certifications</div>
      <div id="certs">
      {
         certs.map(cert => (
@@ -65,7 +71,7 @@ function About(){
     </div>
 
       <div id="backgroundContainer">
-        <div>Background:</div>
+        <div id="backgroundHeader">Background</div>
         <ul id="background">
 
           {

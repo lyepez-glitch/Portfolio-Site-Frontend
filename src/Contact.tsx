@@ -43,9 +43,31 @@ function Contact(){
 
   return(
     <>
-    <Link to="/" className="back-home-link">Back to Home</Link>
+    <div>
+
+    </div>
+
     <div className="contactContainer">
-      <h3>I would love to hear from you! Whether you have questions, ideas, or just want to chat about tech, feel free to reach out.</h3>
+    <Link to="/" className="back-home-link">Back to Home</Link>
+      <div id="contactHeadDiv">
+        <div id="contactGridBox">
+          <div className="border-right"></div>
+          <h1 className="border-right" id="contactHeader">Contact me</h1>
+          <div className="border-right"></div>
+          <div className="border-right"></div>
+          <div className="border-right" id="contactSubHeader">
+            <p>
+             I would love to hear from you!
+            </p>
+            <p>
+            Whether you have questions, ideas, or just want to chat about tech, feel free to reach out.
+            </p>
+            <button id="contactBtn">Contact</button>
+             </div>
+
+        </div>
+
+      </div>
       <div style={{ marginBottom: '20px'}}>
       <label style={{display: 'block' }} >Email:</label>
       <span>{email}</span>
