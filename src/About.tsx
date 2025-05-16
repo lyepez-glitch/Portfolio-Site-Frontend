@@ -35,30 +35,30 @@ function About(){
       <div id="languages">
         <div id="langHeader">Languages</div>
       <ul id="languagesContainer">
-        <li><FaReact /> React</li>
-        <li><DiJavascript1 /> JavaScript</li>
-        <li><FaNode /> Node.js</li>
-        <li><DiJqueryLogo /> jQuery</li>
-        <li><SiSpringboot /> Spring Boot</li>
-        <li><DiDjango /> Django</li>
-        <li><FaJava /> Java</li>
-        <li><FaPython /> Python</li>
-        <li><DiMysql /> MySQL</li>
-        <li><DiPostgresql /> PostgreSQL</li>
-        <li><SiOracle /> Oracle</li>
-
-        <li><DiMongodb /> MongoDB</li>
-    </ul>
+        <li className="icon"><FaReact /> React</li>
+        <li className="icon" ><DiJavascript1 /> JavaScript</li>
+        <li className="icon"><FaNode /> Node.js</li>
+        <li className="icon"><DiJqueryLogo /> jQuery</li>
+        <li className="icon"><SiSpringboot /> Spring Boot</li>
+        <li className="icon"><DiDjango /> Django</li>
+        <li className="icon"><FaJava /> Java</li>
+        <li className="icon"><FaPython /> Python</li>
+        <li className="icon"><DiMysql /> MySQL</li>
+        <li className="icon"><DiPostgresql /> PostgreSQL</li>
+        <li className="icon"><SiOracle /> Oracle</li>
+        <li className="icon"><DiMongodb /> MongoDB</li>
+     </ul>
       </div>
 
-    <div style={{width:'30%'}}>
+    <div style={{borderRight:'2px solid black',width:'30%'}}>
     <ul id="certsContainer">
      <div style={{ fontWeight: 'bold' }}>Certifications</div>
      <div id="certs">
      {
         certs.map(cert => (
-          <li key={cert.title} style={{ marginBottom: '10px' }}>
-            <FaCertificate /> {cert.title}
+          <li key={cert.title} style={{ paddingRight:'20px',borderRight: '2px solid black',marginBottom: '10px' }}>
+            {/* <FaCertificate />  */}
+            {cert.title}
           </li>
         ))
       }
@@ -76,7 +76,7 @@ function About(){
 
           {
             backgrounds.map(background=>
-              <li>{background}</li>
+              <li style={{paddingRight:'20px',borderRight: '2px solid black'}}>{background}</li>
               )
           }
         </ul>

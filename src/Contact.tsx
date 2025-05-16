@@ -11,6 +11,19 @@ function Contact(){
   const [number,setNumber] = useState<string>("")
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false); /// Track if submitted
   const [showSuccess, setShowSuccess] = useState<boolean>(false);  // For green flash
+  const showPopup = (e)=>{
+    console.log('e target',e.target);
+    const popUp = document.querySelector("#contactPopup");
+    popUp.classList.remove("hidden");
+    setShowSuccess(false);
+  }
+
+  const hidePopup = (e)=>{
+    const popUp = document.querySelector("#contactPopup");
+    popUp.classList.add("hidden");
+  }
+
+
   const handleContactSubmit = async(e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
     console.log("Contact form submitted");
@@ -49,39 +62,61 @@ function Contact(){
 
     <div className="contactContainer">
     <Link to="/" className="back-home-link">Back to Home</Link>
+    <div id="contactPopup" className="hidden">
+      <form onSubmit={handleContactSubmit}>
+          <label style={{display:'block'}} htmlFor="name">Name: </label>
+          <input onChange={(e)=>setName(e.target.value)} value={name} type="text" name="name"/>
+          <label style={{display:'block',marginTop:'20px'}} htmlFor="number">Phone Number: </label>
+          <input onChange={(e)=>setNumber(e.target.value)} value={number} type="text" name="number"/>
+        <button style={{display:'block',marginLeft:'30%',marginTop:'20px',marginBottom:'20px'}} type="submit">Contact</button>
+        <button style={{margin:'0'}} onClick={(e)=>hidePopup(e)}>Close</button>
+        <div>{showSuccess && <div style={{marginLeft:'-10%',position:'absolute'}} className="success-flash">Form successfully submitted!</div>}</div>
+      </form>
+
+
+    </div>
       <div id="contactHeadDiv">
         <div id="contactGridBox">
-          <div className="border-right"></div>
-          <h1 className="border-right" id="contactHeader">Contact me</h1>
-          <div className="border-right"></div>
-          <div className="border-right"></div>
-          <div className="border-right" id="contactSubHeader">
+          <div style={{borderBottom: '2px dotted #ccc'}} className="border-right">
+          </div>
+          <h1 style={{borderBottom: '2px dotted #ccc'}} className="border-right" id="contactHeader">Contact me</h1>
+          <div style={{borderBottom: '2px dotted #ccc'}} className="border-right"></div>
+          <div style={{display: 'flex',alignItems: 'flex-end',justifyContent:'center'}}className="border-right">
+          <Link
+            to="#"
+            onClick={(e) => {
+              window.location.href = "mailto:lucasyepez99@gmail.com";
+              e.preventDefault();
+            }}
+          >
+            <i class="fa-solid fa-envelope"></i>
+
+          </Link>
+
+
+          </div>
+          <div  className="border-right" id="contactSubHeader">
             <p>
              I would love to hear from you!
             </p>
             <p>
             Whether you have questions, ideas, or just want to chat about tech, feel free to reach out.
             </p>
-            <button id="contactBtn">Contact</button>
+            <button onClick={(e)=>showPopup(e)} id="contactBtn">Contact</button>
+            <Link style={{textAlign:'center',display:'block'}} to={github}><i class="fa-brands fa-github"></i></Link>
+             </div>
+             <div style={{display: 'flex',alignItems: 'flex-end'}}>
+              <Link style={{textAlign:'center',flexBasis:'100%',display:'block'}} to={linkedIn}><i  class="fa-brands fa-linkedin"></i></Link>
              </div>
 
         </div>
 
       </div>
       <div style={{ marginBottom: '20px'}}>
-      <label style={{display: 'block' }} >Email:</label>
-      <span>{email}</span>
     </div>
-      <Link style={{display:'block'}} to={linkedIn}>LinkedIn</Link>
-      <Link style={{display:'block',marginBottom:'20px'}} to={github}>GitHub</Link>
-      <form onSubmit={handleContactSubmit}>
-        <label style={{display:'block'}} htmlFor="name">Name: </label>
-        <input onChange={(e)=>setName(e.target.value)} value={name} type="text" name="name"/>
-        <label style={{display:'block',marginTop:'20px'}} htmlFor="number">Phone Number: </label>
-        <input onChange={(e)=>setNumber(e.target.value)} value={number} type="text" name="number"/>
-      <button style={{display:'block',marginLeft:'45%',marginTop:'20px'}} type="submit">Contact</button>
-    </form>
-    {showSuccess && <div className="success-flash">Form successfully submitted!</div>}
+
+
+
     </div>
 
 

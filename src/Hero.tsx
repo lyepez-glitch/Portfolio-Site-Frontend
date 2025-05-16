@@ -23,6 +23,8 @@ function Hero(){
 
       <h3 className="nameHeader">Lucas Yepez</h3>
 
+      <img id="mainImg" src="src/mainPic.jpeg"></img>
+
       <p className="intro">Software engineer focused on solving hard problems at the intersection of longevity, neuroscience, and technology.</p>
       <p className="intro">
 
