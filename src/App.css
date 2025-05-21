@@ -95,6 +95,10 @@
     align-self: center;
 }
 
+#projDesc {
+    position: absolute;
+}
+
 .nameHeader {
     font-size: 100px;
     /* flex-basis: 90%; */
@@ -341,6 +345,10 @@ h1.border-right {
     padding-bottom: 70px;
 }
 
+#viewProjects {
+    margin-top: 40px;
+}
+
 .projectsContainer {
     margin-top: 7%;
     display: flex;
@@ -521,6 +529,8 @@ body {
 
 .featuredWork {
     margin-top: '40px';
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 1280px) {
@@ -954,7 +964,7 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .viewProjectDetails {
         margin-right: 0;
     }
@@ -963,6 +973,47 @@ body {
     }
     .featuredWork {
         margin-top: 50px;
+    }
+    #projDesc {
+        position: static;
+        margin-bottom: -20px;
+    }
+    #viewProjects {
+        width: 400px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1280px) {
+    .featuredWork {
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    #viewProjects {
+        margin-top: 60px;
+    }
+    .featuredWork {
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 426px) and (max-width:1318px) {
+    .featuredWork {
+        margin-top: 50px;
+        padding-bottom: 0;
+    }
+    .projectsContainer {
+        margin-top: 100px;
+    }
+}
+
+@media(min-width:1319px) and (max-width:1439px) {
+    .featuredWork {
+        margin-top: 50px;
+        padding-bottom: 0;
     }
 }
 

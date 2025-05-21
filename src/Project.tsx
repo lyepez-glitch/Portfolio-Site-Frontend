@@ -37,7 +37,7 @@ function Project(){
   return (
     <>
     <Link style={{marginTop:'20px',position: 'absolute',left: '12%'}} to="/">Back</Link>
-    <h2 className="featuredWork" style={{borderBottom: '1px solid black',width: '70%',paddingBottom: '20px',fontWeight:'normal',position:'absolute'}}>Featured work</h2>
+    <h2 className="featuredWork" style={{borderBottom: '1px solid black',width: '70%',fontWeight:'normal',position:'absolute'}}>Featured work</h2>
     <div className = "projectsContainer">
       {
 
@@ -48,9 +48,9 @@ function Project(){
             <img class="projImg" src={proj.img}/>
 
 
-            <div style={{flexBasis: '100%',textAlign: 'left',marginTop:'20px'}}><div style={{color: 'black',fontStyle: 'italic',fontWeight:'bold'}}>{proj.title}</div><div style={{position:'absolute'}}>{proj.desc}</div></div>
+            <div style={{flexBasis: '100%',textAlign: 'left',marginTop:'20px'}}><div style={{color: 'black',fontStyle: 'italic',fontWeight:'bold'}}>{proj.title}</div><div id="projDesc">{proj.desc}</div></div>
 
-            <div style={{marginTop:'40px'}}>
+            <div id="viewProjects">
               View the project by clicking the links below:
             </div>
             <Link style={{textDecoration:'none',textAlign:'left',flexBasis:'100%',display:'block',marginTop:'30px'}} to={proj.frontend}> A. Open this frontend in a new tab</Link>
