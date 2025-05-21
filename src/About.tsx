@@ -50,7 +50,7 @@ function About(){
      </ul>
       </div>
 
-    <div style={{borderRight:'2px solid black',width:'30%'}}>
+    <div className="certWrapper">
     <ul id="certsContainer">
      <div style={{ fontWeight: 'bold' }}>Certifications</div>
      <div id="certs">

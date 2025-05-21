@@ -69,19 +69,20 @@ function Contact(){
           <label style={{display:'block',marginTop:'20px'}} htmlFor="number">Phone Number: </label>
           <input onChange={(e)=>setNumber(e.target.value)} value={number} type="text" name="number"/>
         <button style={{display:'block',marginLeft:'30%',marginTop:'20px',marginBottom:'20px'}} type="submit">Contact</button>
+        <div>{showSuccess && <div style={{marginBottom: '20px',color:'green'}}>Form successfully submitted!</div>}</div>
         <button style={{margin:'0'}} onClick={(e)=>hidePopup(e)}>Close</button>
-        <div>{showSuccess && <div style={{marginLeft:'-10%',position:'absolute'}} className="success-flash">Form successfully submitted!</div>}</div>
+        {/* <div id="successflash">{showSuccess && <div style={{marginLeft:'-10%',position:'absolute'}} className="success-flash">Form successfully submitted!</div>}</div> */}
       </form>
 
 
     </div>
       <div id="contactHeadDiv">
         <div id="contactGridBox">
-          <div style={{borderBottom: '2px dotted #ccc'}} className="border-right">
+          <div  className="border-right">
           </div>
-          <h1 style={{borderBottom: '2px dotted #ccc'}} className="border-right" id="contactHeader">Contact me</h1>
-          <div style={{borderBottom: '2px dotted #ccc'}} className="border-right"></div>
-          <div style={{display: 'flex',alignItems: 'flex-end',justifyContent:'center'}}className="border-right">
+          <h1  className="border-right" id="contactHeader">Contact me</h1>
+          <div id= "borderRightDiv" className="border-right"></div>
+          <div style={{display: 'flex',alignItems: 'flex-end',justifyContent:'center'}}className="border-right mail">
           <Link
             to="#"
             onClick={(e) => {
@@ -103,9 +104,9 @@ function Contact(){
             Whether you have questions, ideas, or just want to chat about tech, feel free to reach out.
             </p>
             <button onClick={(e)=>showPopup(e)} id="contactBtn">Contact</button>
-            <Link style={{textAlign:'center',display:'block'}} to={github}><i class="fa-brands fa-github"></i></Link>
+            <Link className= "github" style={{textAlign:'center',display:'block'}} to={github}><i class="fa-brands fa-github"></i></Link>
              </div>
-             <div style={{display: 'flex',alignItems: 'flex-end'}}>
+             <div className="linkedin" style={{display: 'flex',alignItems: 'flex-end'}}>
               <Link style={{textAlign:'center',flexBasis:'100%',display:'block'}} to={linkedIn}><i  class="fa-brands fa-linkedin"></i></Link>
              </div>
 

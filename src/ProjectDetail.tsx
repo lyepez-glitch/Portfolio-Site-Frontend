@@ -28,12 +28,12 @@ function ProjectDetail({ setProjDetailsId,project }: ProjDetailProps) {
         </div>
 
         <div style={{display: 'flex',flexWrap: 'wrap',justifyContent: 'center'}}>
-          <div style={{ display: 'block',flexBasis: '100%',display: 'block' }}><b>Features</b></div>
+          <div style={{ display: 'block',flexBasis: '100%'}}><b>Features</b></div>
           <div style={{width:'100px',fontSize: '10px',backgroundColor:'lightgray',padding: '10px 10px',border: '2px solid black'}}>{project.features}</div>
         </div>
 
 
-        <div><b style={{display: 'block',flexBasis: '100%',display:'block'}}>View Demo</b>
+        <div><b style={{display: 'block',flexBasis: '100%'}}>View Demo</b>
 
         <div>
           <video width="320" height="240" controls>

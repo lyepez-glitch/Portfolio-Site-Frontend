@@ -37,7 +37,7 @@ function Project(){
   return (
     <>
     <Link style={{marginTop:'20px',position: 'absolute',left: '12%'}} to="/">Back</Link>
-    <h2 style={{borderBottom: '1px solid black',width: '70%',paddingBottom: '20px',fontWeight:'normal',position:'absolute',marginTop: '40px'}}>Featured work</h2>
+    <h2 className="featuredWork" style={{borderBottom: '1px solid black',width: '70%',paddingBottom: '20px',fontWeight:'normal',position:'absolute'}}>Featured work</h2>
     <div className = "projectsContainer">
       {
 
@@ -80,7 +80,7 @@ function Project(){
                 </>
 
               ):(
-                <button style={{backgroundColor:'rgb(99, 91, 254)',color: '#fff',marginRight:'85%',marginBottom: '20px',bottom: '-88px', position:'absolute',width: '100px',borderRadius: '15px',padding:'5px'}} onClick={(e)=>setProjDetailsId(proj.id)}>View Project Details</button>
+                <button className= "viewProjectDetails" style={{backgroundColor:'rgb(99, 91, 254)',color: '#fff',marginBottom: '20px',bottom: '-88px', position:'absolute',width: '100px',borderRadius: '15px',padding:'5px'}} onClick={(e)=>setProjDetailsId(proj.id)}>View Project Details</button>
               )
             }
 
