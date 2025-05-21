@@ -2,6 +2,7 @@ import {useState} from 'react';
 import Nav from './Nav';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import mainImg from 'src/mainPic.jpeg';
 
 function Hero(){
   const [name,setName] = useState<string>('Lucas Yepez');
@@ -23,7 +24,9 @@ function Hero(){
 
       <h3 className="nameHeader">Lucas Yepez</h3>
 
-      <img id="mainImg" src="src/mainPic.jpeg"></img>
+      {/* <img id="mainImg" src="src/mainPic.jpeg"></img> */}
+      <img id="mainImg" src="/mainPic.jpeg"></img>
+
 
       <p className="intro">Software engineer focused on solving hard problems at the intersection of longevity, neuroscience, and technology.</p>
       <p className="intro">

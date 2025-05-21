@@ -31,7 +31,8 @@ function About(){
       <h3 id="aboutHeader">About</h3>
 
       <p id="bioText">{bio}</p>
-      <img id="mainImg" src="src/mainPic.jpeg"></img>
+      <img id="mainImg" src="/mainPic.jpeg"></img>
+      {/* <img id="mainImg" src="src/mainPic.jpeg"></img> */}
       <div id="languages">
         <div id="langHeader">Languages</div>
       <ul id="languagesContainer">
